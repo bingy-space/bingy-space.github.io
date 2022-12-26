@@ -7,74 +7,55 @@
     <!-- Add icon to tab -->
     <link rel="icon" href="images/topicon.ico">
     <!-- BootstrapCDN -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+            crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <title>BingNa Yang</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand logo" href="#">
-                <h5>BingNa Yang</h5>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/topicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="nav-title"> BingNa Yang</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#home">[Home]</a>
-                    <a class="nav-item nav-link" href="#about_me">[About Me]</a>
-                    <a class="nav-item nav-link" href="#project">[Project]</a>
-                    <a class="nav-item nav-link" href="#contact">[Contact]</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">[Home]</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">[Projects]</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#archivements">[Archivements]</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">[Contact]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
     <!-- Home Page -->
     <section id="home" class="home">
         <div class="container text-left home-title">
-            <h2>Hey 👋🏻 Welcome</h2>
-            <h1>I'm <span class="name">Bing</span></h1>
-        </div>
-    </section>
-
-    <!-- About Me Page -->
-    <section id="about_me" class="about_me container">
-        <div class="section-title text-center">
-            <h1>About Me</h1>
+            <h2>HELLO THERE 👋🏻  WELCOME,</h2>
+            <h1>I'M <span class="name">Bing</span></h1>
         </div>
         <div class="container about-me-container">
             <div class="container about-me-variables table-responsive">
-                <div class="row">
-                    <div class="col-md">
-                        <h5><span class="signOne">></span><span class="signOne">></span><span class="signOne">></span>
-                            bingnayang<span class="signAt">@</span>Website <span class="signThree">-</span> <span
-                                class="signTwo">$</span></h5>
-                    </div>
-                    <div class="col">
-                        <h5>BingNaYang</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h5>======= <span class="signTwo">USER INFO</span> =======</h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <h5>[👋🏻] UserName:</h5>
-                    </div>
-                    <div class="col">
-                        <h5>BingNa Yang</h5>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md">
                         <h5>[🎓] College:</h5>
@@ -102,7 +83,7 @@
             </div>
         </div>
     </section>
-    <hr class="container">
+
     <!-- Project Page -->
     <section id="project" class="project container">
         <div class="section-title text-center">
@@ -125,7 +106,14 @@
                 </table>
             </div>
     </section>
-    <hr class="container">
+
+    <!-- Archivements Page -->
+    <section id="archivement" class="archivement container">
+        <div class="section-title text-center">
+            <h1>Archivements</h1>
+        </div>
+    </section>
+
     <!-- Contact Page -->
     <section id="contact" class="contact container">
         <div class="section-title text-center">
@@ -156,9 +144,10 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+            crossorigin="anonymous"></script>
+
 </body>
 
 </html>
